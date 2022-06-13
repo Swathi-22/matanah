@@ -1,0 +1,399 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+  <!--Section Start-->
+  <div class="sigma_subheader style-9 bg-cover bg-center" style="background-image: url({% static 'web/img/subheader.jpg' %})">
+    <div class="container">
+      <div class="sigma_subheader-inner">
+        <h1>Blog</h1>
+      </div>
+    </div>
+  </div>
+  <!--Section End-->
+  <!--Section Start-->
+  <div class="sigma_preloader sigma_preloader-gear">
+    <div class="sigma_preloader-inner">
+      <div class="preloader-gear">
+        <div class="preloader-gear-inner">
+          <div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section End-->
+  <!--Section Start-->
+  <div class="modal fade" id="sigma_popup-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog sigma_newsletter-popup-modal style-4 modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body dark-overlay bg-cover bg-center" style="background-image: url({% static 'web/img/newsletter.jpg' %})">
+          <div class="sigma_close light newsletter-popup-trigger" data-dismiss="modal">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="sigma_newsletter-popup-text-wrapper">
+            <h3 class="text-white">Join Our Wooden letter</h3>
+            <p>Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui posuere.</p>
+          </div>
+          <form method="post" class="text-center">
+            <div class="form-group">
+              <input type="email" placeholder="Email Address" class="form-control" name="newsletter-email" value="">
+            </div>
+            <button type="submit" name="button">Subscribe</button>
+            <span class="sigma_newsletter-popup-dismiss newsletter-popup-trigger" data-dismiss="modal">Don't show again</span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section End-->
+  <!--Section Start-->
+  <div class="section">
+    <div class="container">
+      <div class="row masonry">
+        <div class="col-lg-4 col-md-6 masonry-item">
+          <!-- style 7 -->
+          <article class="sigma_post style-7">
+            <div class="sigma_post-thumb">
+              <a href="blog-details.html">
+                <img src="{% static 'web/img/blog/730x730.jpg' %}" alt="img">
+              </a>
+              <div class="sigma_post-categories">
+                <a href="#" class="sigma_post-category">Wooden</a>
+              </div>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">Our Highly Professional Staff</a>
+
+                  </h5>
+                <p>Wood is a porous and fibrous structural tissue found in the stems and roots of trees and other woody plants. It is an organic material – a natural composite of cellulose fibers that are strong in tension and embedded in a matrix of lignin that resists compression.
+                </p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Henry</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post post-format-quote style-7">
+            <blockquote>
+              <h5>Wood is sometimes defined as only the secondary xylem in the stems of trees,[1] or it is defined more broadly to include the same type of tissue elsewhere such as in the roots of trees or shrubs.[citation needed] In a living tree it performs a support function, enabling woody plants to grow large or to stand up by themselves.</h5>
+              <cite>
+
+                  <span>TA</span>
+
+                  Tim Abel
+
+                </cite>
+            </blockquote>
+          </article>
+          <article class="sigma_post style-7">
+            <div class="sigma_post-thumb">
+              <a href="blog-details.html">
+                <img src="{% static 'web/img/blog/730x730-0.jpg' %}" alt="img">
+              </a>
+              <div class="sigma_post-categories">
+                <a href="#" class="sigma_post-category">Wooden</a>
+              </div>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">COME AND LISTEN TO A STORY ABOUT OUR WORK</a>
+
+                  </h5>
+                <p>Recent use of wood has been enhanced by the addition of steel and bronze into construction.
+                </p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Jhon Bell</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6 masonry-item">
+          <article class="sigma_post style-7">
+            <div class="sigma_post-body pt-0">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">Wood Flooring</a>
+
+                  </h5>
+                <p>Wooden House Construction and Woodworks
+                </p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Honsa sina</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post style-7">
+            <div class="sigma_post-thumb">
+              <a href="blog-details.html">
+                <img src="{% static 'web/img/blog/730x730-1.jpg' %}" alt="img">
+              </a>
+            </div>
+            <div class="sigma_post-categories">
+              <a href="#" class="sigma_post-category">Wooden</a>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">Standard Wooden Work</a>
+
+                  </h5>
+                <p>Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque
+                </p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Souza Lee</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post post-format-link style-7">
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>Get inspiration with our latest updates
+</h5>
+                <div class="sigma_post-meta">
+                  <a href="#">
+                    <i class="fal fa-link"></i>
+www.yourlink.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post style-7">
+            <div class="sigma_post-body pt-0">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">We Oll Are Professional</a>
+
+                  </h5>
+                <p>Wood is sometimes defined as only the secondary xylem in the stems of trees or it is defined more broadly to include the same type of tissue elsewhere such as in the roots of trees or shrubs.[citation needed] In a living tree it performs a support function, enabling woody plants to grow large or to stand up by themselves.
+                </p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Smike </a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 col-md-6 masonry-item">
+          <article class="sigma_post post-format-video style-7">
+            <div class="sigma_post-thumb">
+              <a href="blog-details.html">
+                <img src="{% static 'web/img/blog/730x730-2.jpg' %}" alt="img">
+              </a>
+              <a href="https://www.youtube.com/watch?v=EEJFMdfraVY" class="sigma_video-btn popup-video">
+                <i class="far fa-play"></i>
+              </a>
+              <div class="sigma_post-categories">
+                <a href="#" class="sigma_post-category">Wooden</a>
+              </div>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">Youtube Video </a>
+
+                  </h5>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">HUSSY MEEK</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post post-format-audio style-7">
+            <div class="sigma_post-thumb">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/41395010&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">
+                </iframe>
+              </div>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">Audio Post</a>
+
+                  </h5>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">DANNY</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="sigma_post style-7">
+            <div class="sigma_post-thumb">
+              <a href="blog-details.html">
+                <img src="{% static 'web/img/blog/730x730-3.jpg' %}" alt="img">
+              </a>
+              <div class="sigma_post-categories">
+                <a href="#" class="sigma_post-category">Wooden</a>
+              </div>
+            </div>
+            <div class="sigma_post-body">
+              <div class="sigma_post-content">
+                <h5>
+
+                    <a href="blog-details.html">We’re proud to support Wooden Industry</a>
+
+                  </h5>
+                <p>People have used wood for thousands of years for many purposes, including as a fuel or as a construction material for making houses, tools, weapons, furniture, packaging, artworks, and paper. Known constructions using wood date back ten thousand years. Buildings like the European Neolithic long house were made primarily of wood.</p>
+                <div class="sigma_post-meta">
+                  <ul>
+                    <li class="author">
+                      <i class="fal fa-user-circle"></i>
+                      <a href="#">Henry</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-calendar-alt"></i>
+on <a href="blog-details.html" class="ml-2">Jan, 6 2021</a>
+                    </li>
+                    <li>
+                      <i class="fal fa-comment-dots"></i>
+                      <a href="#">572</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- Pagination Start -->
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+          </ul>
+          <!-- Pagination End -->
+    </div>
+  </div>
+  <!--Section End-->
+  <!--Section Start-->
+  <div class="sigma_top style-2">
+    <i class="far fa-arrow-up"></i>
+  </div>
+  <!--Section End-->
+
+  
+ {% endblock %}

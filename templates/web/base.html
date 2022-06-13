@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home 1</title>
+      <meta name="description" content="Description website">
+      <meta name="author" content="Maksym Blank">
+      <meta name="keywords" content="website, with, meta, tags">
+      <meta name="robots" content="noindex, follow">
+      <meta name="revisit-after" content="5 month">
+      <meta name="image" content="../../../../../ww16.mywebsite.com/image4864.html">
+      <meta name="og:title" content="Title website">
+      <meta name="og:description" content="Description website">
+      <meta name="og:image" content="../../../../../ww16.mywebsite.com/image4864.html">
+      <meta name="og:site_name" content="My Website">
+      <meta name="og:type" content="website">
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="Title website">
+      <meta name="twitter:description" content="Description website">
+      <link href="{% static 'web/css/plugins/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'web/css/plugins/slick.css' %}" rel="stylesheet">
+      <link href="{% static 'web/css/plugins/ion.rangeSlider.min.css' %}" rel="stylesheet">
+      <link href="{% static 'web/css/plugins/magnific-popup.css' %}" rel="stylesheet">
+      <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+      <link href="{% static 'web/fonts/flaticon/flaticon.css' %}" rel="stylesheet">
+      <link href="{% static 'web/fonts/font-awesome.min.css' %}" rel="stylesheet">
+   </head>
+   <body class="btn-style-5 btn-square sidebar-style-5">
+
+
+    {% include 'web/partials/header.html' %}
+    {% block content %}
+
+    {% endblock %}
+    {% include 'web/partials/footer.html' %}
+
+
+
+      <script src="{% static 'web/js/plugins/jquery-3.4.1.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/popper.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/bootstrap.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/jquery.instagramFeed.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/slick.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/imagesloaded.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/jquery.counterup.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/jquery.inview.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/plugins/ion.rangeSlider.min.js' %}" type="text/javascript"></script>
+      <script src="{% static 'web/js/main.js' %}" type="text/javascript"></script>
+   </body>
+</html>
