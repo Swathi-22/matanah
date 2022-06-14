@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from web.models import Category, Product,Gallery
 # Create your views here.
 def index(request):
     context = {
@@ -24,10 +24,14 @@ def gallery(request):
 
 
 def product(request):
+    categories = Category.objects.all()
+    products = Product.objects.all()
     context = {
+        'categories':categories,
+        'products':products
 
     }
-    return render(request,'web/product.html',context)
+    return render(request,'web/product1.html',context)
 
 
 def contact(request):

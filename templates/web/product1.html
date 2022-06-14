@@ -1,0 +1,57 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<section class="food-menu bg-grey padding">
+    <div class="container">
+        <div class="section-heading mb-30 text-center wow fadeInUp" data-wow-delay="200ms">
+            <h4 >Popular Dishes</h4>
+            <h2 class="arabic-letter-space">Our delicious<span>food</span></h2>
+            <!-- <p>الغذاء هو أي مادة يتم تناولها لتوفير <br>.الدعم الغذائي للكائن الحي</p> -->
+            <!-- {% for tax in vat %}    
+            <h5>{{tax.vat_price}} :15%: Prices include VAT </h5>
+            
+            {% endfor %} -->
+        </div>
+        <ul class="food-menu-filter">
+            {% for category in categories %}
+            <li data-filter="{{category.title|slugify}}">{{category.title}}</li>
+            {% endfor %}
+            <li class="active" data-filter="*">Everyone</li>
+
+        </ul>
+        <div class="row product-items">
+            {% for product in products %}
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 padding-15 isotop-grid {{product.category.title|slugify}}">
+                <div class="product-item wow fadeInUp" data-wow-delay="200ms">
+                    {% comment %}
+                    {% if product.get_offer != 0 %} <div class="sale">{{product.get_offer}}%</div> {% endif %}
+                    {% endcomment %}
+                    <form>
+                        {% csrf_token %}
+                        <div class="product-thumb">
+                            <img src="{{product.image.url}}"  alt="food">
+                            <!-- <div><a onclick="addCart({{product.id}})" id="{{product.id}}" class="order-btn"><i id="icon{{product.id}}" class="fa-solid fa-cart-shopping"></i> </a></div> -->
+                        </div>
+                    </form>
+                    <div class="food-info">
+
+                        <h3>{{product.title}}</h3>
+                        <div class="price">
+                            <h4>Price :<span> SAR {{product.price}} </span></h4>
+                            <!-- <h4>Cal <span>{{product.cal}}</span></h4> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
